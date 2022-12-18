@@ -109,9 +109,10 @@ function renderData() {
     jsGrid.fields.bscontrol = BSControl;
 
     var gridFields = [];
-    var gridWidth = "700px";
+    var gridWidth = "850px";
 
     gridFields.push({ name: "name", title: "Device", type: "text", width: 150, validate: { validator: "required", message: "Device name is a required field." } });
+    gridFields.push({ name: "user", title: "User", type: "text", width: 150, validate: { validator: "required", message: "User name is a required field." } });
     gridFields.push({ name: "mac", title: "MAC Adress", type: "text", width: 150, validate: { validator: "pattern", param: /^[0-9a-f]{1,2}([\.:-])(?:[0-9a-f]{1,2}\1){4}[0-9a-f]{1,2}$/gmi, message: "MAC Address is a required field." } });
     gridFields.push({
         name: "ip", title: "Broadcast IP", type: "text", width: 150, validate: { validator: "required", message: "Broadcast IP Address is a required field." },

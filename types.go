@@ -10,6 +10,7 @@ type HTTPResponseObject struct {
 // Device represents a Computer Object
 type Device struct {
 	Name        string `json:"name"`
+	User        string `json:"user"`
 	Mac         string `json:"mac"`
 	BroadcastIP string `json:"ip"`
 }
